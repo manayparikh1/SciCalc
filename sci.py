@@ -36,4 +36,7 @@ while running:
     print("\t5. Voltage\t\tV= I x R")
     print("\t6. Kinetic Energy\t\tEk = 0.5 x m x v^2")
     print("\t7. Moles\t\tn = m / M")
-    print("\t8. Exit")
+    print("\t8. Exit SciCalc")
+
+# Prompts the user to enter a number between 1 and 8 to choose what they want to calculate.
+    choice = input("Enter a number (1-8): ")
