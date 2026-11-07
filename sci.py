@@ -103,3 +103,10 @@ while running:
         else: 
             print("That is not an option. Please PICK 1-8.")
 
+# this program happens when the user types a letter instead of a number
+    except ValueError:
+        print("N0oo!! Please type numbers only.")
+
+# happens when the user divides by 0 basically gives an error
+    except ZeroDivisionError:
+        print("N0oo!! You cannot divide by 0 (zero).")
