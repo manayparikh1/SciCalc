@@ -104,10 +104,11 @@ while running:
             print("Moles =", round(moles, 2), "mol")
 
         elif choice == "8":
+            #Gives the answers that the program has calculated in that session and then exits the program
             print("\n================ YOUR ANSWERS ==================")
             print("\n".join(answers))
-            print("\n================================================")
-            print("Thanks for using SciCalc! GoodBYE!")
+            print("================================================")
+            print("Thanks for using SciCalc!!! GoodBYE!")
 
 
             running = False
