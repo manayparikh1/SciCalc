@@ -82,9 +82,10 @@ while running:
             print("Voltage =", round(vol_tage, 2), "V")
 
         elif choice == "6":
+            print("\n--- Kinetic Energy ---")
+            mass=float(input("Mass (kg): "))
+            velocity = float(input("Velocity (m/s): "))
+            energy = 0.5 * mass * velocity ** 2
+            print("Kinetic Energy =", round(energy, 2), "J")
             
-
-
-
-
-    
+             
