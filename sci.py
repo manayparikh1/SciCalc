@@ -37,6 +37,28 @@ while running:
     print("\t6. Kinetic Energy\t\tEk = 0.5 x m x v^2")
     print("\t7. Moles\t\tn = m / M")
     print("\t8. Exit SciCalc")
-
-# Prompts the user to enter a number between 1 and 8 to choose what they want to calculate.
+#==============================================
+# try elif and else statments for all formulas
+#==============================================
     choice = input("Enter a number (1-8): ")
+
+    # Stops the program from crashing if the user enters somethign wrong
+    try:
+        if choice == "1":
+            print("\n--- Speed ---")
+            distance = float(input("Distance(m): "))
+            time_s = float(input("Time(s): "))
+            speed = distance / time_s
+            print("Speed =", round(speed, 2), "m/s")
+
+        elif choice == "2":
+            print("\n--- Acceleration ---")
+            v1 = float(input("Starting Velocity m/s: "))
+            v2 = float(input("Final Velocity m/s: "))
+            time_s = float(input("Time (s): "))
+            acceleration = (v2 - v1) / time_s
+            print("Acceleration =", round(acceleration, 2), "m/s^2")
+
+
+
+    
