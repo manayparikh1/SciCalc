@@ -21,15 +21,15 @@ Moles (n = m / M)
 '''
 
 
-print("=======================================")
-print("                SciCalc")
-print("=======================================")
+print("===================================================================")
+print("                            SciCalc")
+print("===================================================================")
 
 answers = [] # this is the answers variable
 running = True
 
 while running: 
-    print("\nWhat do you want to calculate?")
+    print("\nWhat do you want to calculate? Enter a number from the list below:")
     print("\n\t1. Speed\t\tv= d / t")
     print("\t2. Acceleration\t\ta = (v2 - v1) / t")
     print("\t3. Force\t\tF= m x a")
@@ -45,6 +45,7 @@ while running:
 
     # Stops the program from crashing if the user enters somethign wrong
     try:
+        # speed formula
         if choice == "1":
             print("\n----- Speed -----")
             distance = float(input("Distance(m): "))
@@ -53,6 +54,7 @@ while running:
             answers.append(f"Speed: {round(speed, 2)} m/s")
             print("Speed =", round(speed, 2), "m/s")
 
+# acceleration formula
         elif choice == "2":
             print("----- Acceleration -----")
             v1 = float(input("Starting Velocity m/s: "))
@@ -61,7 +63,7 @@ while running:
             acceleration = (v2 - v1) / time_s
             answers.append(f"Acceleration: {round(acceleration, 2)} m/s^2")
             print("Acceleration =", round(acceleration, 2), "m/s^2")
-
+# force formula
         elif choice == "3":
             print("----- Force -----")
             mass = float(input("Mass (kg): "))
@@ -69,7 +71,7 @@ while running:
             force = mass * acceleration
             answers.append(f"Force: {round(force, 2)} N")
             print("Force =", round(force, 2), "N")
-
+# density formula
         elif choice == "4":
             print("----- Density -----")
             #mass is going to be written in grams instead of kg
@@ -78,7 +80,7 @@ while running:
             density = mass / volume
             answers.append(f"Density: {round(density, 2)} g/cm^3")
             print("Density =", round(density, 2), "g/cm^3")
-
+# voltage formula
         elif choice == "5":
             print("----- Voltage (also known as Ohm's Law) -----")
             current = float(input("Current (A(Amperes)): "))
@@ -86,7 +88,7 @@ while running:
             vol_tage = current * resistance
             answers.append(f"Voltage: {round(vol_tage, 2)} V")
             print("Voltage =", round(vol_tage, 2), "V")
-
+# kinetic formula
         elif choice == "6":
             print("----- Kinetic Energy -----")
             mass=float(input("Mass (kg): "))
@@ -94,7 +96,7 @@ while running:
             energy = 0.5 * mass * velocity ** 2
             answers.append(f"Kinetic Energy: {round(energy, 2)} J")
             print("Kinetic Energy =", round(energy, 2), "J")
-
+# moles formula
         elif choice == "7":
             print("----- Moles -----")
             mass = float(input("Mass (g): "))
@@ -102,7 +104,7 @@ while running:
             moles = mass / molar_mass
             answers.append(f"Moles: {round(moles, 2)} mol")
             print("Moles =", round(moles, 2), "mol")
-
+# exit option
         elif choice == "8":
             #Gives the answers that the program has calculated in that session and then exits the program
             print("\n================ YOUR ANSWERS ==================")
@@ -118,8 +120,8 @@ while running:
 
 # this program happens when the user types a letter instead of a number
     except ValueError:
-        print("N00000!! Please type numbers only.")
+        print("\nN00000!! Please type numbers only.")
 
 # happens when the user divides by 0 basically gives an error
     except ZeroDivisionError:
-        print("N00000!! You cannot divide by 0 (zero).")
+        print("\nN00000!! You cannot divide by 0 (zero).")
