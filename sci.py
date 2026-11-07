@@ -59,6 +59,32 @@ while running:
             acceleration = (v2 - v1) / time_s
             print("Acceleration =", round(acceleration, 2), "m/s^2")
 
+        elif choice == "3":
+            print("\n--- Force ---")
+            mass = float(input("Mass (kg): "))
+            acceleration = float(input("Acceleration (m/s^2): "))
+            force = mass * acceleration
+            print("Force =", round(force, 2), "N")
+
+        elif choice == "4":
+            print("\n--- Density ---")
+            #mass is going to be written in grams instead of kg
+            mass = float(input("Mass (g): "))
+            volume = float(input("Volume (cm^3): "))
+            density = mass / volume
+            print("Density =", round(density, 2), "g/cm^3")
+
+        elif choice == "5":
+            print("\n--- Voltage (also known as Ohm's Law) ---")
+            current = float(input("Current (A(Amperes)): "))
+            resistance = float(input("Resistance (Ω): "))
+            vol_tage = current * resistance
+            print("Voltage =", round(vol_tage, 2), "V")
+
+        elif choice == "6":
+            
+
+
 
 
     
