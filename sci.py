@@ -50,6 +50,7 @@ while running:
             distance = float(input("Distance(m): "))
             time_s = float(input("Time(s): "))
             speed = distance / time_s
+            answers.append(f"Speed: {round(speed, 2)} m/s")
             print("Speed =", round(speed, 2), "m/s")
 
         elif choice == "2":
@@ -58,6 +59,7 @@ while running:
             v2 = float(input("Final Velocity m/s: "))
             time_s = float(input("Time (s): "))
             acceleration = (v2 - v1) / time_s
+            answers.append(f"Acceleration: {round(acceleration, 2)} m/s^2")
             print("Acceleration =", round(acceleration, 2), "m/s^2")
 
         elif choice == "3":
@@ -65,6 +67,7 @@ while running:
             mass = float(input("Mass (kg): "))
             acceleration = float(input("Acceleration (m/s^2): "))
             force = mass * acceleration
+            answers.append(f"Force: {round(force, 2)} N")
             print("Force =", round(force, 2), "N")
 
         elif choice == "4":
@@ -73,6 +76,7 @@ while running:
             mass = float(input("Mass (g): "))
             volume = float(input("Volume (cm^3): "))
             density = mass / volume
+            answers.append(f"Density: {round(density, 2)} g/cm^3")
             print("Density =", round(density, 2), "g/cm^3")
 
         elif choice == "5":
@@ -80,6 +84,7 @@ while running:
             current = float(input("Current (A(Amperes)): "))
             resistance = float(input("Resistance (Ω): "))
             vol_tage = current * resistance
+            answers.append(f"Voltage: {round(vol_tage, 2)} V")
             print("Voltage =", round(vol_tage, 2), "V")
 
         elif choice == "6":
@@ -87,6 +92,7 @@ while running:
             mass=float(input("Mass (kg): "))
             velocity = float(input("Velocity (m/s): "))
             energy = 0.5 * mass * velocity ** 2
+            answers.append(f"Kinetic Energy: {round(energy, 2)} J")
             print("Kinetic Energy =", round(energy, 2), "J")
 
         elif choice == "7":
@@ -94,6 +100,7 @@ while running:
             mass = float(input("Mass (g): "))
             molar_mass = float(input("Molar mass (g/mol): "))
             moles = mass / molar_mass
+            answers.append(f"Moles: {round(moles, 2)} mol")
             print("Moles =", round(moles, 2), "mol")
 
         elif choice == "8":
