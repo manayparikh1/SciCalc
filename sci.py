@@ -87,5 +87,19 @@ while running:
             velocity = float(input("Velocity (m/s): "))
             energy = 0.5 * mass * velocity ** 2
             print("Kinetic Energy =", round(energy, 2), "J")
-            
-             
+
+        elif choice == "7":
+            print("\n--- Moles ---")
+            mass = float(input("Mass (g): "))
+            molar_mass = float(input("Molar mass (g/mol): "))
+            moles = mass / molar_mass
+            print("Moles =", round(moles, 2), "mol")
+
+        elif choice == "8":
+            print("\nThanks for using SciCalc! GoodBYE!")
+
+            running = False
+
+        else: 
+            print("That is not an option. Please PICK 1-8.")
+
