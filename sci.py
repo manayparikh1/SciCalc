@@ -25,6 +25,7 @@ print("=======================================")
 print("                SciCalc")
 print("=======================================")
 
+answers = [] # this is the answers variable
 running = True
 
 while running: 
@@ -96,7 +97,11 @@ while running:
             print("Moles =", round(moles, 2), "mol")
 
         elif choice == "8":
+            print("\n================ YOUR ANSWERS ==================")
+            print("\n".join(answers))
+            print("\n================================================")
             print("Thanks for using SciCalc! GoodBYE!")
+
 
             running = False
 
